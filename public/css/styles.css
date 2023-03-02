@@ -1,0 +1,19 @@
+html{
+  font-family: fantasy;
+}
+.imagen{
+  background-image: url("../images/Daniel-Roman.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+}
+.titulo{
+  font-family: monospace, sans-serif;
+}
+.texto{
+  font-family: 'Calisto MT';
+}
+ion-icon{
+  font-size: 40px !important;
+}
