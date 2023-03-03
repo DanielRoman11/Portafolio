@@ -1,7 +1,7 @@
 {
   "name": "portafolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Daniel Román portafolio profesional",
   "main": "index.js",
   "scripts": {
     "css": "postcss ./public/css/tailwind.css -o ./public/css/app.css --watch"
