@@ -7,19 +7,24 @@
   <link rel="stylesheet" href="./public/css/styles.css">
   <link rel="stylesheet" href="./public/css/app.css">
   <link rel="icon" href="./public/images/pato.gif" type="image/gif">
-  <link rel="shortcut icon" href="./public/images/pato.gif" type="image/gif" >
+  <link rel="shortcut icon" href="./public/images/pato.gif" type="image/gif">
+  <script defer src="index.js"></script>
   <title>Daniel Román</title>
 </head>
 <body class="min-h-screen">
-  <main class="grid md:grid-cols-2 sm:grid-cols-1 row-auto">
+  <main id="principal" class="principal">
     <section class="flex flex-col justify-center space-y-8 items-center min-h-screen bg-slate-100">
       <div class="imagen w-80"></div>
-      <div class="text-center">
-        <h1 class="lg:text-5xl md:text-4xl text-3xl font-extrabold titulo">&lt; DANIEL ROMÁN /&gt;</h1>
-        <h2 class="lg:text-3xl md:text-2xl font-bold">Backend Developer</h2>
-        <a href="mailto:danielroman.05111@gmail.com" class="bg-black w-64 flex justify-center text-white font-bold mx-auto py-3 my-8 text-sm ">Email me</a></div>
+      <div class="text-center space-y-2">
+        <h1 class="lg:text-6xl md:text-5xl text-3xl titulo">&lt; Daniel Román /&gt;</h1>
+        <br>
+        <h2 class="lg:text-2xl md:text-xl texto">Backend Developer</h2>
+        <div class="flex gap-2">
+          <a href="mailto:danielroman.05111@gmail.com" class="bg-black w-28 md:w-48 flex justify-center text-white font-bold mx-auto py-3 my-8 text-sm ">Email me</a>
+          <a href="#scrollTo" class="bg-black w-28 md:w-48 boton justify-center text-white font-bold mx-auto py-3 my-8 text-sm" onclick="mostrarSeccion()">Acerca de mí</a>
+        </div>
       </div>
-      <div class="grid grid-cols-5 gap-4">
+      <div class="grid grid-cols-5 gap-4 ">
         <a href="https://www.instagram.com/daniiel._.roman/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
         <a href="https://www.linkedin.com/in/danielroman-/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         <a href="https://www.facebook.com/danielroman.lol/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -27,14 +32,14 @@
         <a href="https://github.com/DanielRoman11/" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
       </div>
     </section>
-    <section class="flex flex-col justify-center space-y-8 items-center min-h-screen bg-slate-200">
-      <div class="text-center lg:px-52 md:px-20 px-10">
-        <h1 class="lg:text-7xl md:text-5xl text-3xl titulo">&lt; Acerca de mí /&gt;</h1>
-        <p class="texto py-10 text-xl">Ingeniero de sistemas en proceso, con experiencia en desarrollo de aplicaciones web, de escritorio y videojuegos. Me encantaría poder desarrollar mis habilidades de programación, pensamiento crítico, creativo y resolución de problemas para ayudar a impactar através de su empresa de manera positiva, crecer personal y profesionalmente.</p>
+    <section id="seccionDos" class="seccion2 flex-col justify-center space-y-7 items-center min-h-screen bg-slate-200">
+      <div id="scrollTo" class="text-center lg:px-52 md:px-20 px-10 ">
+        <h2 class="lg:text-7xl md:text-5xl text-3xl titulo">&lt; Acerca de mí /&gt;</h2>
+        <p class="texto py-10 md:text-base sm:text-xs">Ingeniero de sistemas en proceso, con experiencia en desarrollo de aplicaciones web, de escritorio y videojuegos. Me encantaría poder desarrollar mis habilidades de programación, pensamiento crítico, creativo y resolución de problemas para ayudar a impactar através de su empresa de manera positiva, crecer personal y profesionalmente.</p>
       </div>
-      <div class="flex gap-2">
-        <a href="./views/perfil.html" class="bg-black w-32 md:w-32 lg:w-64 flex justify-center text-white font-bold mx-auto py-3 my-8 text-sm ">Perfil</a>
-        <a href="#" class="bg-black w-32 md:w-32 lg:w-64  max-w-screen-sm flex justify-center text-white font-bold mx-auto py-3 my-8 text-sm ">Portafolio</a>
+      <div  class="flex gap-2">
+        <a href="./views/perfil.html" class="bg-black flex justify-center text-white font-bold m-auto px-28 py-3 text-sm ">Perfil</a>
+        <a href="#" class="text-xs justify-center font-bold m-auto py-10 max-h-min "><ion-icon name="briefcase"></ion-icon></a>
       </div>
     </section>
   </main>

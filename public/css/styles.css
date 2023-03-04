@@ -1,18 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Oswald:wght@500&display=swap');
 html{
-  font-family: fantasy;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-block-end: 100vh;
+}
+.principal{
+  display: grid;
+  max-width: 100vw;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  
+}
+.seccion2{
+  display: none;
+  max-width: 100%;
+}
+.boton:hover{
+  cursor: pointer;
 }
 .imagen{
   background-image: url("../images/Daniel-Roman.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 360px;
+  height: 400px;
 }
 .titulo{
-  font-family: monospace, sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .texto{
-  font-family: 'Calisto MT';
+  font-family: 'Golos Text', sans-serif;
 }
 ion-icon{
   font-size: 40px !important;
