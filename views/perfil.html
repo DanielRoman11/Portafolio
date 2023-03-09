@@ -13,45 +13,92 @@
 </head>
 <body class="min-h-screen">
     <a href="../index.html">
-      <ion-icon name="arrow-back-circle-sharp" class="absolute top-14 left-14 text-slate-700"></ion-icon>
+      <ion-icon name="arrow-back-circle-sharp" class="fixed top-5 left-5 md:top-14 md:left-14 text-slate-700"></ion-icon>
     </a>
   <main>
-    <section class="h-screen bg-slate-300 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-      <div class="flex justify-center flex-col lg:px-40 md:px-16 space-y-20">
-        <h2 class="lg:text-7xl md:text-5xl font-bold titulo text-gray-800">Acerca de mí</h2>
-        <p class=" texto text-gray-800 lg:text-2xl md:text-lg ">Ingeniero de sistemas en proceso, con experiencia en desarrollo de aplicaciones web, de escritorio y videojuegos. Me encantaría poder desarrollar mis habilidades de programación, pensamiento crítico, creativo y resolución de problemas para ayudar a impactar através de su empresa de manera positiva, crecer personal y profesionalmente.</p>
+    <section class="md:h-screen bg-slate-300 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 p-16">
+      <div class="flex justify-center flex-col lg:px-30 md:px-16 space-y-20">
+        <h2 class="text-4xl lg:text-7xl md:text-5xl font-bold titulo text-gray-800">Acerca de mí</h2>
+        <p class=" texto text-gray-800 lg:text-xl md:text-lg text-lg">Ingeniero de sistemas en proceso, con experiencia en desarrollo de aplicaciones web, de escritorio y videojuegos. Me encantaría poder desarrollar mis habilidades de programación, pensamiento crítico, creativo y resolución de problemas para ayudar a impactar a través de su empresa de manera positiva a sus clientes; desarrollando e implementado soluciones útiles y que estéticamente tengan un buen aspecto.</p>
       </div>
-      <div class="flex items-center ">
-        <div class="imagen w-2/3 h-80"></div>
+      <div class="flex items-center justify-center pt-14 ">
+        <div class="imagen-perfil"></div>
       </div>
     </section>
-    <section class="h-screen bg-slate-100 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 justify-center items-center px-20">
+    <section class="md:h-screen py-10 bg-slate-200 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 justify-center items-center px-20">
       <div class="flex flex-col justify-center lg:px-15 md:px-10">
-        <h2 class="lg:text-7xl md:text-5xl font-bold titulo text-gray-800 ">Experiencia & </h2><span class="lg:text-7xl md:text-5xl font-bold titulo text-gray-800">Educación</span>
+        <h2 class="text-4xl lg:text-7xl md:text-5xl font-bold titulo text-gray-800 ">Experiencia & </h2><span class="text-4xl lg:text-7xl md:text-5xl font-bold titulo text-gray-800">Educación</span>
       </div>
       
-      <div class="grid grid-cols-3 text-slate-600 texto font-bold text-xl ">
-        <div class="col-span-1 space-y-5">2025</div>
+      <div class="grid grid-cols-3 text-slate-600 texto font-bold text-xl space-y-5">
+        <div class="col-span-1 space-y-5 mt-5">2023</div>
         <div class="col-span-2">
           <div class="flex flex-col space-y-2">
-            <h3 class="text-3xl font-bold">Asistente Comercial</h3>
-            <p class="text-lg">Hidroconsulting SAS</p>
-            <p class="text-base font-normal">Me comunique de manera efectiva con mis clientes</p>
+            <h3 class="text-xl md:text-3xl font-extrabold">Practicante Universitario</h3>
+            <p class="text-lg font-semibold ">Redeban SA</p>
+            <p class="text-base font-normal">Realice análisis y recopilación satisfactoria de fuentes de datos.  Materialice los datos y los desplegue a través de interfaces interactivas para la inteligencia de negocio a través de PowerBI.</p>
           </div>
         </div>
-        <div class="col-span-1 space-y-5 pt-5">2025</div>
-        <div class="col-span-2 pt-5">
+        <div class="col-span-1 space-y-5">2019 - 2022</div>
+        <div class="col-span-2">
           <div class="flex flex-col space-y-2">
-            <h3 class="text-3xl font-bold">Senior Engineering</h3>
+            <h3 class="md:text-3xl font-bold">Asistente Comercial</h3>
             <p class="text-lg">Hidroconsulting SAS</p>
-            <p class="text-base font-normal">Asistente Comercial</p>
+            <p class="text-base font-normal">Me comunique de manera efectiva con los clientes, proveedores y colaboradores. Asistí de manera técnica en la selección de equipos especializados y diligencie, envíe y realice seguimiento a cotizaciones.</p>
+          </div>
+        </div>
+        <div class="col-span-1 space-y-5">2019 - Ahora</div>
+        <div class="col-span-2">
+          <div class="flex flex-col space-y-2">
+            <h3 class="text-xl md:text-3xl font-bold">Ingeniero de Sistemas</h3>
+            <p class="text-lg">Universidad Ean</p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="h-screen">
       
     </section>
+    <section class="flex justify-center bg-slate-200 w-full py-10">
+      <div class="bg-slate-700 h-12 pl-2 text-white flex justify-center items-center align-top rounded-lg hover:cursor-pointer" onclick="mostrarCursos()">
+        <p class="text-white texto text-xl">Ver Cursos</p>
+        <p class="text-white"><ion-icon name="arrow-down-outline"></ion-icon></p>
+      </div>
+    </section>
+    <section class="bg-slate-300 md:h-screen flex items-center flex-col py-10">
+      <h2 class="text-4xl font-bold titulo">Habilidades & </h2><span class="text-4xl font-bold titulo pb-10">Competencias</span>
+      <div class="grid grid-cols-2 gap-3 w-full">
+        <div class="flex flex-col justify-center items-center">
+          <h3 class="texto text-2xl pb-10 font-bold">Habilidades técnicas</h3>
+          <p class="texto">NodeJS, MySQL, Express, TailwindCSS</p>
+          <div class="relative -left-36">
+            <div class="absolute border-4 border-gray-500 w-72 "></div>
+            <div class="absolute border-4 border-gray-800 w-56"></div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <h3 class="texto text-2xl pb-10 font-bold">Lenguajes</h3>
+
+        </div>
+        
+      </div>
+    </section>
+    <footer class="grid grid-cols-2 w-full h-full bg-black items-center">
+      <div class="flex justify-center items-center">
+        <div class="imagen"></div>
+      </div>
+      <div class="flex flex-col w-6/12 text-white texto text-xl">
+        <h3 class="text-5xl titulo text-white pb-24">Contáctame</h3>
+        <p class="">Daniel Román</p>
+        <p class="pb-24">danielroman.05111@gmail.com</p>
+        <h4 class="">Conecta conmigo</h4>
+        <div class="grid grid-cols-5">
+          <a href="https://www.instagram.com/daniiel._.roman/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/danielroman-/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="https://www.facebook.com/danielroman.lol/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="https://wa.me/573506192178" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <a href="https://github.com/DanielRoman11/" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+      </div>
+    </footer>
   </main>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

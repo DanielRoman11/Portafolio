@@ -9,7 +9,6 @@ html{
   display: grid;
   max-width: 100vw;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  
 }
 .seccion2{
   display: none;
@@ -24,6 +23,33 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
+  width: 350px;
+}
+.imagen-perfil{
+  background-image: url("../images/Imagen-Perfil.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer{
+  width: 100% !important;
+  height: 100vh !important;
+}
+footer > div > .imagen{
+  height: 80vh;
+  width: 65vh;
+}
+@media (min-width: 429px){
+  .imagen-perfil{
+    height: 600px;
+    width: 550px;
+  }
+}
+@media (max-width: 428px){
+  .imagen-perfil{
+    height: 300px;
+    width: 250px;
+  }
 }
 .titulo{
   font-family: 'Oswald', sans-serif;
@@ -32,5 +58,8 @@ html{
   font-family: 'Golos Text', sans-serif;
 }
 ion-icon{
+  font-size: 40px !important;
+}
+p > ion-icon{
   font-size: 40px !important;
 }
