@@ -40,6 +40,10 @@ html{
   width: 650px;
   display: none;
 }
+.cursos{
+  display: none;
+}
+
 @media (min-width: 429px) {
   .imagen-perfil-1{
     display: block;

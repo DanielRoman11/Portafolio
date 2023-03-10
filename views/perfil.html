@@ -9,6 +9,7 @@
   <link rel="icon" href="../public/images/pato.gif" type="image/gif">
   <link rel="shortcut icon" href="../public/images/pato.gif" type="image/gif">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  <script defer src="../public/js/perfil.js"></script>
   <title>Daniel Roman | Perfil</title>
 </head>
 <body class="min-h-screen">
@@ -57,10 +58,55 @@
       </div>
       
     </section>
-    <section class="flex justify-center bg-slate-200 w-full py-10">
-      <div class="bg-slate-700 h-12 pl-2 text-white flex justify-center items-center align-top rounded-lg hover:cursor-pointer" onclick="mostrarCursos()">
-        <p class="text-white texto text-xl">Ver Cursos</p>
-        <p class="text-white"><ion-icon name="arrow-down-outline"></ion-icon></p>
+    <section class="flex justify-center flex-col items-center bg-slate-200 w-full pt-10">
+      <div id="btnCursos" class="bg-slate-700 h-12 pl-2 w-50 text-white flex justify-center items-center align-top rounded-t-xl hover:cursor-pointer" onclick="mostrarCursos()">
+        <p class="text-white texto text-xl">Ver Cursos<p class="text-white"><ion-icon name="arrow-down-outline"></ion-icon></p>
+      </div>
+      <div id="cursos" class="cursos flex-col justify-center items-center space-y-5 bg-slate-700 w-full py-20">
+        <div class="grid grid-cols-3 text-slate-300 texto font-bold text-xl space-y-5">
+          <div class="col-span-1 space-y-5 mt-5 text-right">2022/8</div>
+          <div class="col-span-2">
+            <div class="flex flex-col space-y-2 pl-10">
+              <h3 class="text-xl md:text-2xl font-extrabold">Responsive Web Designed</h3>
+              <p class="text-lg font-thin">FreeCodeCamp</p>
+            </div>
+          </div>
+          <div class="col-span-1 space-y-5 mt-5 text-right">2022/9</div>
+          <div class="col-span-2">
+            <div class="flex flex-col space-y-2 pl-10">
+              <h3 class="text-xl md:text-2xl font-extrabold">.NET Esencial</h3>
+              <p class="text-lg font-thin">LinkedIn</p>
+            </div>
+          </div>
+          <div class="col-span-1 space-y-5 mt-5 text-right">2022/9</div>
+          <div class="col-span-2">
+            <div class="flex flex-col space-y-2 pl-10">
+              <h3 class="text-xl md:text-2xl font-extrabold">Introducing ASP.NET Core</h3>
+              <p class="text-lg font-thin">LinkedIn</p>
+            </div>
+          </div>
+          <div class="col-span-1 space-y-5 mt-5 text-right">2022/10</div>
+          <div class="col-span-2">
+            <div class="flex flex-col space-y-2 pl-10">
+              <h3 class="text-xl md:text-2xl font-extrabold">C# and .NET Essential Training</h3>
+              <p class="text-lg font-thin">LinkedIn</p>
+            </div>
+          </div>
+          <div class="col-span-1 space-y-5 mt-5 text-right">2022/10</div>
+          <div class="col-span-2">
+            <div class="flex flex-col space-y-2 pl-10">
+              <h3 class="text-xl md:text-2xl font-extrabold">Fundamentos del desarrollo web: Full Stack o Front-end</h3>
+              <p class="text-lg font-thin">LinkedIn</p>
+            </div>
+          </div>
+          <div class="col-span-1 space-y-5 mt-5 text-right">2022/12</div>
+          <div class="col-span-2">
+            <div class="flex flex-col space-y-2 pl-10">
+              <h3 class="text-xl md:text-2xl font-extrabold">ASP.NET Core: Razor Pages</h3>
+              <p class="text-lg font-thin">LinkedIn</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="bg-slate-300 md:h-screen flex justify-center flex-col py-10 md:px-20">
@@ -82,7 +128,7 @@
           </div>
           <p class="texto pt-10">ASP.NET Core, Blazor, SQLServer, Bootstrap 5</p>
           <div class="relative -left-36">
-            <div class="absolute border-4 border-gray-500 w-72 "></div>
+            <div class="absolute border-4 border-gray-500 w-72"></div>
             <div class="absolute border-4 border-gray-800 w-52"></div>
           </div>
         </div>
@@ -94,7 +140,7 @@
                 <div class="absolute border-4 border-gray-800 w-72"></div>
               </div>
             <p class="texto pt-10">Ingles: B2 IELTS</p>
-            <div class="relative -left-36">
+            <div class="relative -left-36 ">
               <div class="absolute border-4 border-gray-500 w-72"></div>
               <div class="absolute border-4 border-gray-800 w-56"></div>
             </div>
