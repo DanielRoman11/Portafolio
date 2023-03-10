@@ -31,6 +31,20 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.imagen-perfil-1{
+  background-image: url("../images/Imagen-Perfil-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 650px;
+  display: none;
+}
+@media (min-width: 429px) {
+  .imagen-perfil-1{
+    display: block;
+  }
+}
 footer{
   width: 100% !important;
   height: 100vh !important;
