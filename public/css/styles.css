@@ -49,6 +49,11 @@ html{
     display: block;
   }
 }
+@media (min-width: 1024px) {
+  .imagen-perfil{
+    height: 80vh;
+  }
+}
 footer{
   width: 100% !important;
   height: 100vh !important;

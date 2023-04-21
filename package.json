@@ -4,7 +4,7 @@
   "description": "Daniel Román portafolio profesional",
   "main": "index.js",
   "scripts": {
-    "css": "postcss ./public/css/tailwind.css -o ./public/css/app.css --watch"
+    "css": "postcss ./public/css/tailwind.css -o ./public/css/app.css --minify"
   },
   "keywords": [
     "portafolio",
