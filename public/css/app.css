@@ -474,6 +474,18 @@ video {
 .relative {
   position: relative;
 }
+.left-0 {
+  left: 0px;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.bottom-2 {
+  bottom: 0.5rem;
+}
+.left-2 {
+  left: 0.5rem;
+}
 .z-10 {
   z-index: 10;
 }
@@ -515,6 +527,9 @@ video {
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
