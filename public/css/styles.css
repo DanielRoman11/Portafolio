@@ -5,6 +5,10 @@ html{
   scroll-behavior: smooth;
   scroll-padding-block-end: 100vh;
 }
+ion-icon {
+  font-size: 10px !important;
+}
+
 .principal{
   display: grid;
   max-width: 100vw;
