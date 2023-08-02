@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.html"],
+  content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      }
+    },
   },
   plugins: [],
 }
